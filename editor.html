@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html type="text/html" lang="en-CA">
+<head>
+<style type="text/css">
+input, button {
+  width: 100%;
+  height: 35%;
+}
+</style>
+</head>
+<body>
+<input type="text" id="input" value="">
+<button type="submit" onClick="displayResult()">
+<p>When you have clicked this button, it will display the result.
+<p id="text"></p>
+<script type="text/javascript">
+function displayResult() {
+  var v = document.getElementById("input").value
+  document.getElementById("text").innerHTML = v
+}
+</script>
+</body>
+</html>
